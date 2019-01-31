@@ -1,5 +1,5 @@
 pipeline {
-	agent none
+	agent any
     stages {
          stage('Build') {
 		 agent {docker { image 'maven:3.6.0-alpine' } }             
