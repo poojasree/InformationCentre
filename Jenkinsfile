@@ -8,6 +8,14 @@ pipeline {
                 sh 'mvn -X clean install'      
             }
         } 
+		stage('Helm') {
+		   
+            steps {		
+                    sh 'helm init'   
+					sh 'helm create Info_Chart'
+					   
+            }
+        } 
          
     }
 }
