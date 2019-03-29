@@ -1,4 +1,4 @@
-# Pull base image
+
 FROM openjdk:10-jdk-slim
 
 ARG MAVEN_VERSION=3.5.3
