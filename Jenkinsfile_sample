@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Build') {
 		   agent {
-                docker { image 'pooja1989/maven:v1.1' }
+                docker { image 'maven:v1.1' }
            }
             
             steps {
