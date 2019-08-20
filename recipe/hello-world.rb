@@ -1,0 +1,11 @@
+apt_update
+ 
+package 'apache2'
+ 
+template '/index.html' do
+  source 'index.html.erb'
+end
+ 
+service 'apache2' do
+  action [:enable, :start]
+end
